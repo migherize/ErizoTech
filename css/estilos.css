@@ -9,7 +9,6 @@
 
 .hero-foot{
     padding-top: 40px;
-    padding-bottom: 40px;
 }
 
 .hero-foot .container{
@@ -194,3 +193,45 @@ div#imagen:hover p#headline{
     z-index: 2;
 }
 /* carta */
+
+.telefono{
+  display: none;
+  align-items: stretch;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+@media (min-width:991px) and (max-width: 1250px) {
+  .pie {
+  background-image: none;
+  }
+  .top-right {
+    position: absolute;
+    top: 80px;
+  }
+  .bottom-right {
+    position: absolute;
+    bottom: 10px;
+  }
+  }
+
+  @media handheld, only screen and (max-width: 990px) {
+    .pie {
+      background-image: none;
+      }
+    .top-right {
+      display: none;
+    }
+    .bottom-right {
+      display: none;
+    }
+    .telefono{
+      display: flex;
+    }
+    .sec4:before{
+      display: none;
+    }
+    #sec4::after{
+      display: none;
+    }
+    }

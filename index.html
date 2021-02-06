@@ -8,7 +8,7 @@
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.0/css/bulma.min.css">
     <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
 </head>
-<body style="color: #242424;">
+<body style="background-color: #242424;">
 	<section class="hero is-dark is-fullheight">
 		<!-- Hero head: will stick at the top -->
 	  <div class="hero-head">
@@ -16,7 +16,7 @@
 			<div class="container">
 			  <div class="navbar-brand">
 				  <img class="image is-64x64" src="img/pp.jpg" style="padding-top: 5px;padding-bottom: 8px;">
-				  <span class="navbar-burger burger" data-target="navbarMenuHeroC">
+				  <span class="navbar-burger burger" data-target="navbarMenuHeroC" style="color: white;">
 					<span></span>
 					<span></span>
 					<span></span>
@@ -24,16 +24,13 @@
 				</div>
 			  <div id="navbarMenuHeroC" class="navbar-menu">
 				<div class="navbar-end">
-				  <a class="navbar-item is-active">
-					Home
-				  </a>
-				  <a class="navbar-item">
-					Galeria
-				  </a>
+				  <a class="navbar-item is-active">Home</a>
+				  <a class="navbar-item">Galeria</a>
+				  <a class="navbar-item">Galeria</a>
 				  <span class="navbar-item">
-					<a class="button is-success is-inverted" href="{% url 'login' %}">
+					<a class="button is-link is-inverted" >
 					  <span class="icon">
-						<i class="fas fa-tooth"></i>
+						
 					  </span>
 					</a>
 				  </span>
@@ -54,10 +51,9 @@
 					Todo Relacionado con tu Telefono
 					</h2>
 				  <h2 class="subtitle" style="color: black; margin-top: 20px;">
-					  <button class="button is-danger is-hovered">Da el siguiente paso</button>
+					  <button class="button is-danger is-hovered"><i class="fas fa-mobile-alt" style="margin-right: 5px;" ></i>Da el siguiente paso</button>
 				  </h2>
 			  </div>
-				<img src="img/">
 			</div>
 	  </section>
   
@@ -111,7 +107,7 @@
 							  Todo Relacionado con tu Computadora
 						  </h2>
 					  <h2 class="subtitle" style="color: black; margin-top: 20px;">
-						  <button class="button is-danger is-hovered">Da el siguiente paso</button>
+						  <button class="button is-danger is-hovered"> <i class="fas fa-laptop" style="margin-right: 5px;"></i>Da el siguiente paso</button>
 					  </h2>
 				  </div>
 					</div>
@@ -130,9 +126,10 @@
 	  <section class="hero is-medium is-dark is-bold sec4">
 		<div class="hero-foot" id="destino">
 			<div class="container">
-				<figure class="image is-3by1 pie">
+				<figure class="image is-3by1 pie" style="height: 410px;">
+					<div class="columns is-desktop">
 				   <div>
-						<div class="top-left">
+						<div class="column top-left" >
 						<form class="card-content hero has-text-link" style="line-height: 10px; margin-left: 10px;">
 							<div class="field" style="width: 270px;">		
 							  <label class="label  is-centered" style="padding-bottom: 10px;">
@@ -169,7 +166,7 @@
 					   
 					</div>
 					<div class="top-right">
-						<div class="columns" style="width: 400px;margin-right: 20px;line-height: 20px;">
+						<div class="columns is-mobile" style="width: 400px;margin-right: 20px;line-height: 20px;">
 							<a href=""> <i class="fas fa-map-marker-alt fa-4x" style="color: red; padding-right: 10px; padding-top: 10px;"></i></a> 
 							<address style="margin-right: 20px;">
 								<strong>Erizo Tech F.P.</strong><br>
@@ -185,8 +182,8 @@
 						</div>           
 					</div>
 
-					<div class="bottom-right"> 
-						<div class="columns" style="width: 400px;margin-right: 20px;line-height: 20px;">
+					<div class="  bottom-right"> 
+						<div class="columns is-mobile" style="width: 400px;margin-right: 20px;line-height: 20px;">
 							<a href=""> <i class="fas fa-map-marker-alt fa-4x" style="color: red; padding-right: 10px; padding-top: 10px;"></i></a>
 							<address style="margin-right: 54px;">
 								<strong>Erizo Tech 2 F.P.</strong><br>
@@ -201,15 +198,64 @@
 								</figure>
 							 </address>
 						</div>      
+					</div>
 					</div>                     
 				   </div>
 				  </figure>
 			</div>
-			<div class="container copyright" style="border-top-width: 1px;">
-				Copyright © 2020 - 2021  Migherize. All Rights Reserved        </div>
-			</div>
+		</section>
+		
+		<section class="is-dark telefono">
+				<div class="container">
+					
+					<div class="columns is-mobile" style="width: 400px;margin-right: 20px;line-height: 20px;">
+						<a href=""> <i class="fas fa-map-marker-alt fa-4x" style="color: red; padding-right: 10px; padding-top: 10px;"></i></a> 
+						<address style="margin-right: 20px;">
+							<strong>Erizo Tech F.P.</strong><br>
+							Av. ppal. Sector El Pumarroso<br>
+							Pampán, Trujillo 3151<br>
+							<strong title="Teléfono">T:</strong><a href="https://api.whatsapp.com/send?phone=584124706545&text=Saludos...">+58 412-4706545</a>
+						</address>
+						<address>
+							<figure class="image is-96x96" style="vertical-align: center; margin-bottom: 30px;">
+								<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7871.373647508228!2d-70.47352490000003!3d9.448836500000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e62d30496b381c1%3A0xd185b04a2da343f6!2sFlor%20de%20Patria%203151%2C%20Trujillo!5e0!3m2!1ses!2sve!4v1612482457047!5m2!1ses!2sve" width="90" height="90" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+							</figure>
+						</address>
+					</div>    
+				</div>
+				<div class="container"> 
+					<div class="columns is-mobile" style="width: 400px;margin-right: 20px;line-height: 20px;">
+						<a href=""> <i class="fas fa-map-marker-alt fa-4x" style="color: red; padding-right: 10px; padding-top: 10px;"></i></a>
+						<address style="margin-right: 54px;">
+							<strong>Erizo Tech 2 F.P.</strong><br>
+							Av. ppal. Los Rios<br>
+							Pampanito, Trujillo 3152<br>
+							<strong title="Teléfono">T:</strong><a href="https://api.whatsapp.com/send?phone=584160881268&text=Saludos...">+58 416-0881268</a>
+							
+						</address>
+						<address>
+							<figure class="image is-96x96" style="vertical-align: center; margin-bottom: 30px;">
+								<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15744.42547839502!2d-70.51104787426927!3d9.412065811000971!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e62d419d1c2c9ab%3A0x3c2c00403c72c7bc!2sPampanito%2C%20Trujillo!5e0!3m2!1ses!2sve!4v1612550235331!5m2!1ses!2sve" width="90" height="90" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+							</figure>
+						</address>
+					</div>      
+				</div>     
+			</section>
+				<div class="container copyright" style="border-top-width: 1px;">
+					Copyright © 2020 - 2021  Migherize. All Rights Reserved        
+				</div>
 	</section>
-  </section>
 </body>
 <script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script>
+<script>
+	(function(){
+		var burger = document.querySelector('.burger');
+		var nav = document.querySelector('#'+ burger.dataset.target);
+
+		burger.addEventListener('click', function(){
+			burger.classList.toggle('is-active');
+			nav.classList.toggle('is-active');
+		})
+	})();
+</script>
 </html>
