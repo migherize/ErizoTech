@@ -1,0 +1,196 @@
+.main{
+    background: url(../img/fondo.jpeg);
+    overflow: hidden;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.hero-foot{
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.hero-foot .container{
+    border-top: 1px solid #424242;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+.hero-foot {
+    line-height: 70px;
+}
+
+dd, dt {
+    height: 30px;
+}
+
+dl {
+    margin-left: 15px;
+}
+
+.pie {
+    background: url(../img/pie.jpeg);
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+tr {
+  height: 30px;
+}
+
+/*contenedor*/
+.copyright {
+    position: relative;
+    text-align: center;
+    color: white;
+  }
+  /*abajo a la izquierda*/
+  .bottom-left {
+    position: absolute;
+    bottom: 8px;
+    left: 16px;
+  }
+  /* arriba a la izquierda*/
+  .top-left {
+    position: absolute;
+    top: 8px;
+    left: 16px;
+  }
+  /* arriba a la derecha */
+  .top-right {
+    position: absolute;
+    top: 80px;
+    right: 20px;
+  }
+  /*abajo a la derecha*/
+  .bottom-right {
+    position: absolute;
+    bottom: 50px;
+    right: 16px;
+  }
+  /*centrado*/
+  .centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .bottom-centered{
+    position: absolute;
+    bottom: 6px; 
+    left: 50%;
+    transform: translatex(-50%);
+  }
+
+#imagen{
+	width: 1200px;
+	height: 400px;
+    background: url(../img/bombillo.jpg);
+    background-size: 70% 100%;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-position: center center;
+
+}
+
+#info{
+	position: absolute;
+	overflow: hidden;
+	width: 1200px;
+	height: 400px;
+	background-color: rgba(31,31,31,0.9);
+	-webkit-transition:opacity 0.2;
+	opacity: 0;
+}
+
+#imagen:hover{
+	opacity: 1;
+}
+
+#info:hover{
+	opacity: 1;
+}
+
+table#headline {
+	position: absolute;
+	-webkit-transition:margin 0.2s;
+	margin-left: -70px;
+	font-size: 21px;
+}
+
+div#imagen:hover p#headline{
+	margin-left: 70px;
+}
+
+.tab{
+   width: 33%;
+   text-align: center;
+   vertical-align: top;
+}
+
+
+/* diagonal*/
+.sec3
+{
+	width: 100%;
+	height: 500px;
+	background: #ffeb3b;
+	position: relative;
+}
+.sec4
+{
+
+	width: 100%;
+	height: 500px;
+	background: #262626;
+	position: relative;
+
+}
+
+.sec4:before
+{
+	content: '';
+	width: 30%;
+	height: 300px;
+	position: absolute;
+	top: -120px;
+	left: 0;
+    background-image: linear-gradient(to left,#242428,#241c1d 100%);
+	transform: skewY(36deg);
+}
+
+/* digonal */
+/* carta */
+
+#sec3
+{
+	width: 100%;
+	height: 500px;
+	position: relative;
+}
+#sec4
+{
+
+	width: 100%;
+	height: 500px;
+    position: relative;
+}
+
+#sec4:after
+{
+	content: '';
+	width: 75%;
+	height: 310px;
+	position: absolute;
+	top: -95px;
+	right: 0;
+    background-image: linear-gradient(to left,#363636,#242424 100%);
+    color: #363636;
+    transform: skewY(-20deg);
+    z-index: 2;
+}
+/* carta */

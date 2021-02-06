@@ -1,9 +1,215 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>ErizoTech</title>
+	<title>Erizo Tech</title>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="css/estilos.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.0/css/bulma.min.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
 </head>
-<body>
-<h1>hola</h1>
+<body style="color: #242424;">
+	<section class="hero is-dark is-fullheight">
+		<!-- Hero head: will stick at the top -->
+	  <div class="hero-head">
+		  <header class="navbar">
+			<div class="container">
+			  <div class="navbar-brand">
+				  <img class="image is-64x64" src="img/pp.jpg" style="padding-top: 5px;padding-bottom: 8px;">
+				  <span class="navbar-burger burger" data-target="navbarMenuHeroC">
+					<span></span>
+					<span></span>
+					<span></span>
+				  </span>
+				</div>
+			  <div id="navbarMenuHeroC" class="navbar-menu">
+				<div class="navbar-end">
+				  <a class="navbar-item is-active">
+					Home
+				  </a>
+				  <a class="navbar-item">
+					Galeria
+				  </a>
+				  <span class="navbar-item">
+					<a class="button is-success is-inverted" href="{% url 'login' %}">
+					  <span class="icon">
+						<i class="fas fa-tooth"></i>
+					  </span>
+					</a>
+				  </span>
+				</div>
+			  </div>
+			</div>
+		  </header>
+	  </div>
+  
+	  <section class="hero is-light" id="sec3" style="height: 400px;">
+			<div class="hero-body" style="text-align: center; padding-top: 0px; padding-right: 48px; padding-left: 48px; height: 260px">
+				<img src="img/telefonoteg.png">
+			  <div class="container" style="margin-bottom: 30px; ">
+					<h1 class="title" style="color: black; margin-bottom: 10px;">
+					  !Profilaxis Telefonica!
+				  </h1>
+				  <h2 title="subtitle" style="color: black;">
+					Todo Relacionado con tu Telefono
+					</h2>
+				  <h2 class="subtitle" style="color: black; margin-top: 20px;">
+					  <button class="button is-danger is-hovered">Da el siguiente paso</button>
+				  </h2>
+			  </div>
+				<img src="img/">
+			</div>
+	  </section>
+  
+	  <section class="hero is-medium is-dark is-bold sec3" id="sec4" style="z-index: 2;">
+		<div class="columns" style="z-index: 3;">
+				<div class="column" style="z-index: 4;">
+					 <div style="padding: 50px">
+						<div id="imagen">	
+							<div id="info" style="text-align:center;">
+								<h2 class=" title" style="height:50px; width:400px; margin:0px auto; padding-bottom: 50px;"> !Profilaxis Tegnologica! </h2>
+								<table style="width:100%;"> 
+									<tr>
+									  <td style="width: 33%; text-align: center; vertical-align: top;">Accesorios</td>
+									  <td style="width: 33%; text-align: center; vertical-align: top;">Mouse</td>
+									  <td style="width: 33%; text-align: center; vertical-align: top;">Cables</td>
+								  </tr>
+								  <tr style="border: 100px">
+									  <td style="width: 33%; text-align: center; vertical-align: top;">Cornetas</td>
+									  <td style="width: 33%; text-align: center; vertical-align: top;">Teclados</td>
+									  <td style="width: 33%; text-align: center; vertical-align: top;">Audifonos</td>
+								  </tr>
+								  <tr>
+									  <td style="width: 33%; text-align: center; vertical-align: top;">Pendrive</td>
+									  <td style="width: 33%; text-align: center; vertical-align: top;">Disco Duro</td>
+									  <td style="width: 33%; text-align: center; vertical-align: top;">Forros</td>
+									</tr>
+									<tr>
+									  <td style="width: 33%; text-align: center; vertical-align: top;">Memoria Micro SD</td>
+									  <td style="width: 33%; text-align: center; vertical-align: top;">Fuente De Poder</td>
+									  <td style="width: 33%; text-align: center; vertical-align: top;">Vidrio Templados</td>
+									</tr>
+							  </table>  							
+								<a href="pagina.html"  class="button is-primary is-inverted is-outlined" style="margin: center; margin-top:100px ; ">  Ver mas >></a>
+							  <button h></button>
+							</div>
+						</div>
+					</div>
+				</div>
+		  </div>
+	  </section>
+  
+	  <section class="hero is-light">
+		  <div class="columns">
+			   <div class="column">
+				  <div class="hero-body" style="margin-top: 50px; padding-left: 200px;">
+					<div class="container">
+						<h1 class="title" style="color: black; margin-bottom: 10px;">
+						  !Profilaxis Computacional!
+					  	</h1>
+						  <h2 title="subtitle" style="color: black;">
+							  Todo Relacionado con tu Computadora
+						  </h2>
+					  <h2 class="subtitle" style="color: black; margin-top: 20px;">
+						  <button class="button is-danger is-hovered">Da el siguiente paso</button>
+					  </h2>
+				  </div>
+					</div>
+			  </div>
+			  
+			  <div class="column">
+					 <div>
+						<figure class="image is-5by3">
+							<img src="img/programascompu.jpg">
+					  </figure>
+					</div>
+				</div>
+		  </div>
+	  </section>
+  
+	  <section class="hero is-medium is-dark is-bold sec4">
+		<div class="hero-foot" id="destino">
+			<div class="container">
+				<figure class="image is-3by1 pie">
+				   <div>
+						<div class="top-left">
+						<form class="card-content hero has-text-link" style="line-height: 10px; margin-left: 10px;">
+							<div class="field" style="width: 270px;">		
+							  <label class="label  is-centered" style="padding-bottom: 10px;">
+								  <h3 class="title is-4" style="text-align: center;">CONTACTANOS </h3>
+							  </label>
+		
+							  <div class="field">
+								  <label class="label" style="color: white;">Email</label>
+								  <div class="control has-icons-left has-icons-right">
+									<input class="input" type="email" placeholder="Email input" value="">
+									<span class="icon is-small is-left">
+									  <i class="fas fa-envelope"></i>
+									</span>
+								  </div>
+							  </div>
+		
+							  <div class="field" style="margin-top: 20px;">
+								  <label class="label" style="color: white;">Message</label>
+								  <div class="control">
+									<textarea class="textarea" placeholder="Textarea"></textarea>
+								  </div>
+								</div>	
+						  </div>
+						  <div class="control">
+							<button type="button" class=" button is-link is-fullwidth" onclick="obtenerCodigo()">Enviar</button>
+						  </div>
+							<div style="margin-top: 10px;">
+
+							  <a href="https://www.facebook.com/Erizo-Tech-105338224644398" style="margin-left: 50px;"> <i class="fab fa-facebook fa-lg" style="color: white;"></i>  </a>
+							  <a href="https://www.instagram.com/erizotech/" style="width: 10px;margin-left: 50px;"> <i class="fab fa-instagram fa-lg" style="color: white;"></i>  </a>
+							  <a href="https://api.whatsapp.com/send?phone=584149759470&text=%C2%BFEn%20que%20te%20podemos%20ayudar?" style="margin-left: 50px;"> <i class="fab fa-whatsapp fa-lg" style="color: white;"></i> </a>
+							</div>
+						</form>
+					   
+					</div>
+					<div class="top-right">
+						<div class="columns" style="width: 400px;margin-right: 20px;line-height: 20px;">
+							<a href=""> <i class="fas fa-map-marker-alt fa-4x" style="color: red; padding-right: 10px; padding-top: 10px;"></i></a> 
+							<address style="margin-right: 20px;">
+								<strong>Erizo Tech F.P.</strong><br>
+								Av. ppal. Sector El Pumarroso<br>
+								Pampán, Trujillo 3151<br>
+								<strong title="Teléfono">T:</strong><a href="https://api.whatsapp.com/send?phone=584124706545&text=Saludos...">+58 412-4706545</a>
+							 </address>
+							 <address>
+								<figure class="image is-96x96" style="vertical-align: center; margin-bottom: 30px;">
+									<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7871.373647508228!2d-70.47352490000003!3d9.448836500000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e62d30496b381c1%3A0xd185b04a2da343f6!2sFlor%20de%20Patria%203151%2C%20Trujillo!5e0!3m2!1ses!2sve!4v1612482457047!5m2!1ses!2sve" width="90" height="90" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+								</figure>
+							 </address>
+						</div>           
+					</div>
+
+					<div class="bottom-right"> 
+						<div class="columns" style="width: 400px;margin-right: 20px;line-height: 20px;">
+							<a href=""> <i class="fas fa-map-marker-alt fa-4x" style="color: red; padding-right: 10px; padding-top: 10px;"></i></a>
+							<address style="margin-right: 54px;">
+								<strong>Erizo Tech 2 F.P.</strong><br>
+								Av. ppal. Los Rios<br>
+								Pampanito, Trujillo 3152<br>
+								<strong title="Teléfono">T:</strong><a href="https://api.whatsapp.com/send?phone=584160881268&text=Saludos...">+58 416-0881268</a>
+
+							 </address>
+							 <address>
+								<figure class="image is-96x96" style="vertical-align: center; margin-bottom: 30px;">
+									<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15744.42547839502!2d-70.51104787426927!3d9.412065811000971!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e62d419d1c2c9ab%3A0x3c2c00403c72c7bc!2sPampanito%2C%20Trujillo!5e0!3m2!1ses!2sve!4v1612550235331!5m2!1ses!2sve" width="90" height="90" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+								</figure>
+							 </address>
+						</div>      
+					</div>                     
+				   </div>
+				  </figure>
+			</div>
+			<div class="container copyright" style="border-top-width: 1px;">
+				Copyright © 2020 - 2021  Migherize. All Rights Reserved        </div>
+			</div>
+	</section>
+  </section>
 </body>
+<script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script>
 </html>
